@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/health-logs";
+const API_URL = "/health-logs";
 
 const form = document.getElementById("healthForm");
 const logTable = document.getElementById("logTable");
