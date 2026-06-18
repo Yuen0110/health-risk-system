@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  background: #f2f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  color: #1f4e79;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submitBtn {
+  background: #1f78b4;
+  color: white;
+}
+
+#submitBtn:hover {
+  background: #155d8b;
+}
+
+#cancelBtn {
+  background: #999;
+  color: white;
+  display: none;
+}
+
+h2 {
+  color: #1f4e79;
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th {
+  background: #1f4e79;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.risk-low {
+  color: white;
+  background: #2e8b57;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.risk-medium {
+  color: black;
+  background: #ffd966;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.risk-high {
+  color: white;
+  background: #cc0000;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.edit-btn {
+  background: #f0ad4e;
+  color: white;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background: #d9534f;
+  color: white;
+}

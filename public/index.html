@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>智慧健康日誌風險評估系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>智慧健康日誌風險評估系統</h1>
+    <p class="subtitle">輸入每日睡眠、步數、心情分數，系統會用決策樹判斷健康風險。</p>
+
+    <form id="healthForm">
+      <input type="hidden" id="editId">
+
+      <label>日期</label>
+      <input type="date" id="log_date" required>
+
+      <label>睡眠時數</label>
+      <input type="number" id="sleep_hours" step="0.1" min="0" required>
+
+      <label>步數</label>
+      <input type="number" id="steps" min="0" required>
+
+      <label>心情分數 1～10</label>
+      <input type="number" id="mood_score" min="1" max="10" required>
+
+      <button type="submit" id="submitBtn">新增日誌</button>
+      <button type="button" id="cancelBtn" onclick="cancelEdit()">取消修改</button>
+    </form>
+
+    <h2>健康日誌紀錄</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>睡眠</th>
+          <th>步數</th>
+          <th>心情</th>
+          <th>風險等級</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="logTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
